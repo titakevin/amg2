@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awesome Team</title>
+    <link rel="icon" href="Alice_Logo_lightshadow-min.png">
+    <style>
+        body {
+            background: linear-gradient(45deg, #0f0c29, #302b63, #24243e);
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 50px;
+        }
+        .profile {
+            height: 200px;
+            width: 200px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 50%;
+            transition: transform 0.3s ease, filter 0.3s ease;
+        }
+        .profile:hover {
+            transform: scale(1.1);
+            filter: brightness(1.2);
+        }
+        .kevin { background-image: url('kev.jpg'); }
+        .kevin:hover { background-image: url('kevink.jpg'); }
+        .murad { background-image: url('1.jpg'); }
+        .murad:hover { background-image: url('2.jpg'); }
+        .ali { background-image: url('aliko.jpg'); }
+        .ali:hover { background-image: url('Screenshot 2025-02-10 211646.png'); }
+        .gunes { background-image: url('gunes.jpg'); }
+        .gunes:hover { background-image: url('gunesg.jpg'); }
+        
+        p::first-letter {
+            font-size: 40px;
+            color: cyan;
+        }
+        ::selection {
+            background-color: yellow;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bizim Komanda</h1>
+    <div class="container">
+        <div class="profile kevin"></div>
+        <p>Kevin - Hər zaman hamıya yol göstərən və təcrübəsi ilə seçilən insandır. O, müdrikliyi ilə komandanın əsas dayağıdır.</p>
+        
+        <div class="profile murad"></div>
+        <p>Murad - Ən mehriban və enerjili üzvlərimizdən biridir. Onun hərəkətli ruhu həmişə ətrafdakıları motivasiya edir.</p>
+        
+        <div class="profile ali"></div>
+        <p>Ali - Hər zaman inkişaf edən və yeniliklərə açıq biridir. Uğurları ilə hər kəsə ilham verir.</p>
+        
+        <div class="profile gunes"></div>
+        <p>Günəş - Komandanın parlaq ulduzu! Onun bacarıqları və istedadı daim fərqlənir.</p>
+    </div>
+    
+    <script>
+        document.body.style.transition = "background 1s ease";
+        setInterval(() => {
+            const colors = ['#0f0c29', '#302b63', '#24243e', '#1a1a2e', '#16213e'];
+            document.body.style.background = colors[Math.floor(Math.random() * colors.length)];
+        }, 5000);
+    </script>
+</body>
+</html>
